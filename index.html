@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YOUTUBE API SEARCH BOILERPLATE</title>
+    <meta name="author" content="JAVASCRIPTUM.RU">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-12">
+                        <h2 class="small clearfix">YouTube API v3 Search <span class="pull-right text-muted">Поиск видео на YouTube по запросу</span></h2>
+                        <hr>
+                        <form action="/" class="form-inline" id="youTubeSearchForm">
+                            <div class="form-group form-group-md">
+                                <input type="text" placeholder="Введите название видео" class="form-control" id="youTubeSearch">
+                                <input type="submit" value="Найти" class="btn btn-danger" id="youTubeSubmit" disabled>
+                            </div>
+                        </form>
+                        <p id="YouTubeTextReceiver"></p>
+                        <ol id="youTubeList"></ol>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- GOOGLE API CLIENT -->
+    <script src="https://apis.google.com/js/client.js"></script>
+    <!-- YOUTUBE API SEARCH MODULE -->
+    <script src="main.js"></script>
+</body>
+</html>
